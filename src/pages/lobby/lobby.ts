@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { EntryPage } from '../entry/entry';
+import { PreviousEntryPage } from '../previous-entry/previous-entry';
 /**
  * Generated class for the LobbyPage page.
  *
@@ -20,5 +22,12 @@ export class LobbyPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad LobbyPage');
   }
+makeEntry(){
+  this.navCtrl.push(EntryPage);
+}
+
+viewEntry(){
+  this.navCtrl.push(PreviousEntryPage);
+}
 
 }

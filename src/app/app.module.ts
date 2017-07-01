@@ -6,10 +6,14 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { LobbyPage } from '../pages/lobby/lobby';
+import { EntryPage } from '../pages/entry/entry';
+import { PreviousEntryPage } from '../pages/previous-entry/previous-entry';
 
 let injections: any[] = [
     MyApp,
-    LobbyPage
+    LobbyPage,
+    EntryPage,
+    PreviousEntryPage
   ]
 
 @NgModule({
